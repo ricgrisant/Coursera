@@ -2,28 +2,28 @@
 <html lang="en">
 
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-<title>Coursera</title>
+  <title>Coursera</title>
 
-<!-- Google font -->
-<link href="https://fonts.googleapis.com/css?family=Lato:700%7CMontserrat:400,600" rel="stylesheet">
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:700%7CMontserrat:400,600" rel="stylesheet">
 
-<!-- Bootstrap -->
-<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- Bootstrap -->
+  <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
 
-<!-- Font Awesome Icon -->
-<link rel="stylesheet" href="css/font-awesome.min.css">
+  <!-- Font Awesome Icon -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
 
-<!-- Custom stlylesheet -->
-<link type="text/css" rel="stylesheet" href="css/style.css" />
-<script type="text/javascript" src="https://unpkg.com/popper.js"></script> 
+  <!-- Custom stlylesheet -->
+  <link type="text/css" rel="stylesheet" href="css/style.css" />
+  <script type="text/javascript" src="https://unpkg.com/popper.js"></script> 
 
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
 								<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 								<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -32,31 +32,8 @@
            </head>
 
            <body>
-            <!--Ventana Modal de registro-->
-
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    ...
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Header -->
-            <header id="header" class="transparent-nav">
+             <!-- Header -->
+             <header id="header" class="transparent-nav">
               <div class="container">
                 <div class="row">
                   <div class="navbar-header col-md-4">
@@ -71,9 +48,6 @@
                    <!-- /Menú desplegable multinivel -->
                    <div>
                     <div class="dropdown">
-                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                       Dropdown
-                     </button>
                      <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
                       <li class="dropdown-item"><a href="#">Some action</a></li>
                       <li class="dropdown-item"><a href="#">Some other action</a></li>
@@ -117,9 +91,7 @@
               <!-- Navigation -->
               <div class="col-md-4">
                 <ul class="main-menu nav navbar-nav navbar-right">
-                  <li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                    Launch demo modal
-                  </button></li>
+                  <li><a class="sesion">Inicia Sesion</a></li>
                   <li><a class="registro">Regístrarse</a></li>
                 </ul>
               </div>

@@ -309,7 +309,7 @@
 			border-color:#FF6700;
 		}
 		/* -- Logo -- */
-		
+
 	/*------------------------------------*\
 		Hero Area
 		\*------------------------------------*/
@@ -1110,41 +1110,41 @@
 			#why-us .feature {
 				margin-top:40px;
 			}
-			
+
 			.about-video {
 				margin-top:40px;
 			}
-			
+
 			/*-- Call to action --*/
 			#cta {
 				text-align:center;
 			}
-			
+
 			/*-- Footer --*/
 			.footer-logo {
 				text-align:center;
 			}
-			
+
 			.footer-nav {
 				text-align:center;
 			}
 			.footer-nav li {
 				margin-top: 10px;
 			}
-			
+
 			.footer-social {
 				text-align:center;
 			}
 			.footer-social li {
 				margin-top: 10px;
 			}
-			
+
 			.footer-copyright {
 				text-align:center;
 				line-height:inherit;
 				margin-top:20px;
 			}
-			
+
 			/*-- Contact page --*/
 			.contact-form  {
 				margin-bottom:40px;
@@ -1153,7 +1153,7 @@
 			.contact-form button {
 				float:none !important;
 			}
-			
+
 			/*-- Blog page --*/
 			#main {
 				margin-bottom:80px;
@@ -1182,18 +1182,18 @@
 			#courses-wrapper [class*='col-xs'] {
 				width:100%;
 			}
-			
+
 			/*-- Blog Comments --*/
 			.blog-comments .media .media {
 				margin-left:0px;
 			}
-			
+
 			/*-- Blog Reply Form --*/
 			.blog-reply-form .input.name-input , .blog-reply-form .input.email-input {
 				width: 100%;
 				float:none;
 			}
-			
+
 			.blog-reply-form .input.email-input {
 				margin-left: 0px;
 			}
@@ -1224,10 +1224,10 @@
 		#preloader .preloader:after {
 			content:"";
 			display:block;
-			width:40px;
-			height:40px;
+			width:65px;
+			height:65px;
 			border: 1px solid #EBEBEB;
-			border-top: 1px solid #FF6700;
+			border-top: 3px solid #337ab7;
 			border-radius: 50%;
 			-webkit-animation: 1s preloader linear infinite;
 			animation: 1s preloader linear infinite;

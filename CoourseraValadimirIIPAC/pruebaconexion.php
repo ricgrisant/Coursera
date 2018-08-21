@@ -17,17 +17,15 @@
 	<th>Lastname</th>
 	</tr>";
 	oci_execute($stmt);
-
+	$row = $conexion->obtenerFila($stmt);
+	var_dump($row); /*
 	while($row = $conexion->obtenerFila($stmt))
 	{
 		echo "<tr>";
 		echo "<td>" . $row['FIRST_NAME'] . "</td>";
 		echo "<td>" . $row['LAST_NAME'] . "</td>";
 		echo "</tr>";
-	}
-	
-	echo "</table>";
-	var_dump($row);
+	}*/
 
 	$conexion->liberarResultado($stmt);
 

@@ -4,13 +4,7 @@ class Conexion{
 	private $Usuario = "system";
 	private $contrasena = "Asd.#1234";
 	private $link;
-	private $infoConexion = "(DESCRIPTION =
-	(ADDRESS = (PROTOCOL = TCP)(HOST = Riki-Pc)(PORT = 1521))
-	(CONNECT_DATA =
-	(SERVER = DEDICATED)
-	(SERVICE_NAME = XE)
-	)
-)";
+	private $infoConexion = 'localhost/XE';
 
 
 public function __construct()

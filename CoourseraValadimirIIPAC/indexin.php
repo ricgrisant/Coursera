@@ -7,7 +7,7 @@
      $usuario = $session->get("usuario");
 
      if (!$usuario) {
-      header("Location: login.php");
+      header("Location: index.php");
     } else 
     {
       ?>
@@ -33,7 +33,7 @@
 
         <!-- Custom stlylesheet -->
         <link type="text/css" rel="stylesheet" href="css/style.css" />
-        <script type="text/javascript" src="https://unpkg.com/popper.js"></script> 
+        <script type="text/javascript" src="js/popper.min.js"></script> 
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -42,9 +42,11 @@
                 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
               <![endif]-->
 
-            </head>
+          </head>
 
-            <body>
+          <body>
+            <div>
+                            <div>
              <!-- Header -->
              <header id="header" class="transparent-nav">
               <div class="container">
@@ -101,13 +103,26 @@
                 </nav>
               </div>
 
-              <!-- Navigation -->
+              <!-- Navigation 
               <div class="col-md-4">
                 <ul class="main-menu nav navbar-nav navbar-right">
-                  <li><a class="sesion"> <?php echo $usuario; ?> </a></li>
-                  <li><a class="sesion"> </a></li>
+                  <li><a class="sesion"> <?php /*echo $usuario*/; ?> </a></li>
+                  <li><i class="fa fa-user-circle" aria-hidden="true"></i></li>
                 </ul>
               </div>
+            </div>-->
+            <div class="btn-group">
+              <a class="btn btn-primary" href="#"><i class="fa fa-user fa-fw"></i> <?php echo $usuario; ?></a>
+              <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
+                <span class="fa fa-caret-down" title="Toggle dropdown menu"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#"><i id="btnCursos" class="fa fa-pencil fa-fw"></i>Mis cursos</a></li>
+                <li><a href="#"><i class="fa fa-user-circle-o"></i> Perfil</a></li>
+                <li><a href="#"><i class="fa fa-cog"></i>Ajustes</a></li>
+                <li class="divider"></li>
+                <li><a href="logout.php"><i class="fa fa-key"></i> Cerrar Sesión</a></li>
+              </ul>
             </div>
 
             <!-- /Navigation -->
@@ -557,25 +572,27 @@
   <!-- row -->
 
 </div>
-<!-- /container -->
+            </div>
 
-</footer>
-<!-- /Footer -->
+            <!-- /container -->
 
-<!-- preloader -->
-<div id='preloader'>
-  <div class='preloader'></div>
-</div>
-<!-- /preloader -->
+          </footer>
+          <!-- /Footer -->
 
-<!-- jQuery Plugins -->
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
+          <!-- preloader -->
+          <div id='preloader'>
+            <div class='preloader'></div>
+          </div>
+          <!-- /preloader -->
 
-</body>
+          <!-- jQuery Plugins -->
+          <script type="text/javascript" src="js/jquery.min.js"></script>
+          <script type="text/javascript" src="js/bootstrap.min.js"></script>
+          <script type="text/javascript" src="js/main.js"></script>
 
-</html> --> --> -->
-<?php 
-}
-?>
+        </body>
+
+        </html> --> --> -->
+        <?php 
+      }
+      ?>

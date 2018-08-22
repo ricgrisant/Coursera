@@ -91,7 +91,7 @@
               <!-- Navigation -->
               <div class="col-md-4">
                 <ul class="main-menu nav navbar-nav navbar-right">
-                  <li><a class="sesion">Inicia Sesion</a></li>
+                  <li><a href="login.php" class="sesion">Inicia Sesion</a></li>
                   <li><a class="registro">Regístrarse</a></li>
                 </ul>
               </div>

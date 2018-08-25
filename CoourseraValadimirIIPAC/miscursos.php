@@ -1,3 +1,16 @@
+     <?php 
+
+     include_once("class/class_conexion.php");
+     include_once("sesion.class.php"); 
+
+     $session = new sesion();
+     $usuario = $session->get("usuario");
+
+     if (!$usuario) {
+      header("Location: index.php");
+    } else 
+    {
+      ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,14 +40,9 @@
             <div class="card-header">
              <a class="card-link" data-toggle="collapse" data-parent="#card-234751" href="#card-element-412526">Mis Cursos</a>
            </div>
-           <div id="card-element-412526" class="collapse show">
-            <div class="card-body">
-              Ultima vez activo
-            </div>
-          </div>
           <div id="card-element-412526" class="collapse show">
             <div class="card-body">
-              Inactivo
+              Todos los Cursos
             </div>
           </div>
           <div id="card-element-412526" class="collapse show">
@@ -53,22 +61,38 @@
            <a class="card-link" data-toggle="collapse" data-parent="#card-234751" href="#card-element-480725">Logros</a>
          </div>
       </div>
-      <div class="card">
-          <div class="card-header">
-           <a class="card-link" data-toggle="collapse" data-parent="#card-234751" href="#card-element-480725">Completados</a>
-         </div>
-      </div>
     </div>
   </div>
   <!--Finaliza cartas menu-->
-
+  
 
   <!--Aqui comienza la carta de mis cursos-->
   <div id="misCursos" class="col-md-8">
     <div>
-    <h4>Última vez activo</h4>
-    <h6>Los cursos están ordenados por tu última actividad.</h6>
+    <h4>Tus cursos</h4>
   </div>
+
+  <?php
+  $idUsuario = $session->get("idUsuario");
+      $conexion = new Conexion();
+      $sql = "with info_curso as (select idcurso,nombre,dificultad,duracion from curso),
+              curso_usr as(SELECT idusuario,idcurso
+              FROM usuarioxcurso
+              where idusuario=".$idUsuario.")
+              SELECT * FROM info_curso inf,curso_usr u
+              where inf.idcurso=u.idcurso";
+    
+    $conexion->consultaSql($sql);
+    $result = $conexion->consultaSql($sql);
+    if( $result === false ) {
+      die( print_r( oci_error(), true));
+    }
+
+    oci_execute($result);
+
+
+    while($row =  $conexion->obtenerFila($result)){
+      echo '</div>
     <div class="card">
       <div class="card-body">
         <div style="float: left;">
@@ -79,9 +103,9 @@
           
           <div style="float:  left;max-width: 60%;" class="col-sm-4">
             <!--nombre,universidad,fechafinalizacion,estrellas-->
-            <p>Programación Móvil</p>
-            <p>Universidad de Barcelona</p>
-            <p>Escuela de Informatica</p>
+            <p>'.$row["NOMBRE"].'</p>
+            <p>'.$row["DIFICULTAD"].'</p>
+            <p>'.$row["DURACION"].'</p>
           </div>
           <div style="float: right;" class="col-sm-4">
             <!--fecha finalizacion de curso-->
@@ -90,52 +114,30 @@
         </div>
         <div style="bottom: 85px;left: 380px;" class="col-sm-4">
           <!--boton de ir al curso y obteer certificado-->
-          <button type="button" class="btn btn-light">Ir al curso</button>
+          <button href="'.$row["DURACION"].'" type="button" class="btn btn-light">Ir al curso</button>
         </div>
       </div>
     </div>
     <!--Finaliza mis cursos-->
 
     <div class="divisor"></div>
-    
-    <!--Aqui comienza carousel-->
-    <div id="carCursos" class="row">
-      <div class="col-md-12">
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="img/banner.jpg" alt="First slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="img/course02.jpg" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="img/post02.jpg" alt="Third slide">
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-      </div>
-    </div>
-    <!--Finaliza carousel-->
+  </div>';
+    }
+    $conexion->liberarResultado( $result);
+   ?>
 
+  </div>
+    <!--Finaliza mis cursos-->
+
+    <div class="divisor"></div>
   </div>
 </div>
 </div>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.min.js"></script>
-<script>
-  $('.carousel').carousel({
-  interval: 2000
-})
-</script>
 </body>
 
 </html>
+<?php  
+}
+?>

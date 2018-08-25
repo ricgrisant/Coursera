@@ -54,7 +54,7 @@
 	{
 
 		$conexion = new Conexion();
-		$sql = "select * from usuario";/* where correo = "."'".$_POST["usuario"]."'";*/
+		$sql = "select * from usuario where correo = '".$_POST["usuario"]."'";
 		
 		$conexion->consultaSql($sql);
 		$result = $conexion->consultaSql($sql);
@@ -83,7 +83,8 @@
 	<div class="limiter">
 		<div class="container-login100" style="background-image: url('img/home-background.jpg');">
 			<div class="wrap-login100 p-t-190 p-b-30">
-				<form class="login100-form validate-form" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+				<form class="login100-form validate-form" 
+				action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
 					<div id="avatar" class="login100-form-avatar">
 						<img src="img/avatar.png" alt="AVATAR">
 					</div>

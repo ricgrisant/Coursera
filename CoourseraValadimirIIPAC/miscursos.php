@@ -14,7 +14,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
+        <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -92,7 +92,7 @@
 
 
     while($row =  $conexion->obtenerFila($result)){
-      echo '</div>
+      echo '
     <div class="card">
       <div class="card-body">
         <div style="float: left;">
@@ -103,9 +103,9 @@
           
           <div style="float:  left;max-width: 60%;" class="col-sm-4">
             <!--nombre,universidad,fechafinalizacion,estrellas-->
-            <p>'.$row["NOMBRE"].'</p>
-            <p>'.$row["DIFICULTAD"].'</p>
-            <p>'.$row["DURACION"].'</p>
+            <p>'.utf8_encode($row["NOMBRE"]).'</p>
+            <p>'.utf8_encode($row["DIFICULTAD"]).'</p>
+            <p>'.utf8_encode($row["DURACION"]).'</p>
           </div>
           <div style="float: right;" class="col-sm-4">
             <!--fecha finalizacion de curso-->
@@ -120,8 +120,7 @@
     </div>
     <!--Finaliza mis cursos-->
 
-    <div class="divisor"></div>
-  </div>';
+    <div class="divisor"></div>';
     }
     $conexion->liberarResultado( $result);
    ?>

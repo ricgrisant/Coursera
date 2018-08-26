@@ -102,190 +102,222 @@
           </div>
         </header>
         <!-- /Header -->
+<div id="contenido">
+            <!-- Home -->
+            <div id="home" class="hero-area">
 
-        <!-- Home -->
-        <div id="home" class="hero-area">
+              <!-- Backgound Image -->
+              <div class="bg-image bg-parallax overlay" style="background-image:url(./img/banner.jpg)"></div>
+              <!-- /Backgound Image -->
 
-          <!-- Backgound Image -->
-          <div class="bg-image bg-parallax overlay" style="background-image:url(./img/banner.jpg)"></div>
-          <!-- /Backgound Image -->
-
-          <div class="home-wrapper">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-8">
-                  <h1 class="title-text">Eres imparable</h1>
-                  <p class="text">Desarrolla habilidades solicitadas y obtén credenciales valiosas.</p>
-                  <a class="main-button icon-button" href="#">Únete de forma gratuita</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <!-- /Home -->
-
-        <!-- About -->
-        <div id="about" class="section">
-
-          <!-- container -->
-          <div class="container">
-
-            <!-- row -->
-            <div class="row">
-
-              <div class="col-md-6">
-                <div class="section-header">
-                  <h2>Bienvenido a Coursera</h2>
-                  <p class="lead">Experimenta estudiar desde cualquier lugar en las universidades más prestigiosas del mundo.</p>
-                </div>
-
-                <!-- feature -->
-                <div class="feature">
-                  <i class="feature-icon fa fa-flask"></i>
-                  <div class="feature-content">
-                    <h4>Cursos en Linea </h4>
-                    <p>Cientos de cursos en todas las áreas de conocimiento.</p>
+              <div class="home-wrapper">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-8">
+                      <h1 class="title-text">Eres imparable</h1>
+                      <p class="text">Desarrolla habilidades solicitadas y obtén credenciales valiosas.</p>
+                      <a class="main-button icon-button" href="#">Únete de forma gratuita</a>
+                    </div>
                   </div>
-                </div>
-                <!-- /feature -->
-
-                <!-- feature -->
-                <div class="feature">
-                  <i class="feature-icon fa fa-users"></i>
-                  <div class="feature-content">
-                    <h4>Intructores Expertos</h4>
-                    <p>Graduados con honores de las más prestigiosas universidades.</p>
-                  </div>
-                </div>
-                <!-- /feature -->
-
-                <!-- feature -->
-                <div class="feature">
-                  <i class="feature-icon fa fa-comments"></i>
-                  <div class="feature-content">
-                    <h4>Comunidad</h4>
-                    <p>Un foro para compartir tus dudas o logros con el mundo.</p>
-                  </div>
-                </div>
-                <!-- /feature -->
-
-              </div>
-
-              <div class="col-md-6">
-                <div class="about-img">
-                  <img src="./img/about.png" alt="">
                 </div>
               </div>
 
             </div>
-            <!-- row -->
+            <!-- /Home -->
 
-          </div>
-          <!-- container -->
-        </div>
-        <!-- /About -->
+            <!-- About -->
+            <div id="about" class="section">
 
-        <!-- Courses -->
-        <div id="courses" class="section">
+              <!-- container -->
+              <div class="container">
 
-          <!-- container -->
-          <div class="container">
+                <!-- row -->
+                <div class="row">
 
-            <!-- row -->
-            <div class="row">
-              <div class="section-header text-center">
-                <h2>Explora Coursera</h2>
-                <p class="lead">Comienza con uno de estos cursos sugeridos</p>
+                  <div class="col-md-6">
+                    <div class="section-header">
+                      <h2>Bienvenido a Coursera</h2>
+                      <p class="lead">Experimenta estudiar desde cualquier lugar en las universidades más prestigiosas del mundo.</p>
+                    </div>
+
+                    <!-- feature -->
+                    <div class="feature">
+                      <i class="feature-icon fa fa-flask"></i>
+                      <div class="feature-content">
+                        <h4>Cursos en Linea </h4>
+                        <p>Cientos de cursos en todas las áreas de conocimiento.</p>
+                      </div>
+                    </div>
+                    <!-- /feature -->
+
+                    <!-- feature -->
+                    <div class="feature">
+                      <i class="feature-icon fa fa-users"></i>
+                      <div class="feature-content">
+                        <h4>Intructores Expertos</h4>
+                        <p>Graduados con honores de las más prestigiosas universidades.</p>
+                      </div>
+                    </div>
+                    <!-- /feature -->
+
+                    <!-- feature -->
+                    <div class="feature">
+                      <i class="feature-icon fa fa-comments"></i>
+                      <div class="feature-content">
+                        <h4>Comunidad</h4>
+                        <p>Un foro para compartir tus dudas o logros con el mundo.</p>
+                      </div>
+                    </div>
+                    <!-- /feature -->
+
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="about-img">
+                      <img src="./img/about.png" alt="">
+                    </div>
+                  </div>
+
+                </div>
+                <!-- row -->
+
               </div>
+              <!-- container -->
             </div>
-            <!-- /row -->
+            <!-- /About -->
 
-            <!-- courses -->
-            <div id="courses-wrapper">
+            <!-- Courses -->
+            <div id="courses" class="section">
 
-              <!-- row -->
-              <div class="row">
+              <!-- container -->
+              <div class="container">
+
+                <!-- row -->
+                <div class="row">
+                  <div class="section-header text-center">
+                    <h2>Explora Coursera</h2>
+                    <p class="lead">Comienza con uno de estos cursos sugeridos</p>
+                  </div>
+                </div>
+                <!-- /row -->
+
+                <!-- courses -->
+                <div id="courses-wrapper">
+
+                  <!-- row -->
+                  <div class="row">
+
+                    <!-- single course -->
+                    <div class="col-md-3 col-sm-6 col-xs-6">
+                      <div class="course">
+                        <a href="#" class="course-img">
+                         <img src="./img/course01.jpg" alt="">
+                         <i class="course-link-icon fa fa-link"></i>
+                       </a>
+                       <a class="course-title" href="#">Beginner to Pro in Excel: Financial Modeling and Valuation</a>
+                       <div class="course-details">
+                        <span class="course-category">Business</span>
+                        <span class="course-price course-free">Free</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /single course -->
+
+                  <!-- single course -->
+                  <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="course">
+                      <a href="#" class="course-img">
+                       <img src="./img/course02.jpg" alt="">
+                       <i class="course-link-icon fa fa-link"></i>
+                     </a>
+                     <a class="course-title" href="#">Introduction to CSS </a>
+                     <div class="course-details">
+                      <span class="course-category">Web Design</span>
+                      <span class="course-price course-premium">Premium</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- /single course -->
 
                 <!-- single course -->
                 <div class="col-md-3 col-sm-6 col-xs-6">
                   <div class="course">
                     <a href="#" class="course-img">
-                     <img src="./img/course01.jpg" alt="">
+                     <img src="./img/course03.jpg" alt="">
                      <i class="course-link-icon fa fa-link"></i>
                    </a>
-                   <a class="course-title" href="#">Beginner to Pro in Excel: Financial Modeling and Valuation</a>
+                   <a class="course-title" href="#">The Ultimate Drawing Course | From Beginner To Advanced</a>
                    <div class="course-details">
-                    <span class="course-category">Business</span>
-                    <span class="course-price course-free">Free</span>
+                    <span class="course-category">Drawing</span>
+                    <span class="course-price course-premium">Premium</span>
                   </div>
                 </div>
               </div>
               <!-- /single course -->
 
-              <!-- single course -->
               <div class="col-md-3 col-sm-6 col-xs-6">
                 <div class="course">
                   <a href="#" class="course-img">
-                   <img src="./img/course02.jpg" alt="">
+                   <img src="./img/course04.jpg" alt="">
                    <i class="course-link-icon fa fa-link"></i>
                  </a>
-                 <a class="course-title" href="#">Introduction to CSS </a>
+                 <a class="course-title" href="#">The Complete Web Development Course</a>
                  <div class="course-details">
-                  <span class="course-category">Web Design</span>
-                  <span class="course-price course-premium">Premium</span>
+                  <span class="course-category">Web Development</span>
+                  <span class="course-price course-free">Free</span>
                 </div>
               </div>
             </div>
             <!-- /single course -->
 
+          </div>
+          <!-- /row -->
+
+          <!-- row -->
+          <div class="row">
+
             <!-- single course -->
             <div class="col-md-3 col-sm-6 col-xs-6">
               <div class="course">
                 <a href="#" class="course-img">
-                 <img src="./img/course03.jpg" alt="">
+                 <img src="./img/course05.jpg" alt="">
                  <i class="course-link-icon fa fa-link"></i>
                </a>
-               <a class="course-title" href="#">The Ultimate Drawing Course | From Beginner To Advanced</a>
+               <a class="course-title" href="#">PHP Tips, Tricks, and Techniques</a>
                <div class="course-details">
-                <span class="course-category">Drawing</span>
-                <span class="course-price course-premium">Premium</span>
+                <span class="course-category">Web Development</span>
+                <span class="course-price course-free">Free</span>
               </div>
             </div>
           </div>
           <!-- /single course -->
 
+          <!-- single course -->
           <div class="col-md-3 col-sm-6 col-xs-6">
             <div class="course">
               <a href="#" class="course-img">
-               <img src="./img/course04.jpg" alt="">
+               <img src="./img/course06.jpg" alt="">
                <i class="course-link-icon fa fa-link"></i>
              </a>
-             <a class="course-title" href="#">The Complete Web Development Course</a>
+             <a class="course-title" href="#">All You Need To Know About Web Design</a>
              <div class="course-details">
-              <span class="course-category">Web Development</span>
+              <span class="course-category">Web Design</span>
               <span class="course-price course-free">Free</span>
             </div>
           </div>
         </div>
         <!-- /single course -->
 
-      </div>
-      <!-- /row -->
-
-      <!-- row -->
-      <div class="row">
-
         <!-- single course -->
         <div class="col-md-3 col-sm-6 col-xs-6">
           <div class="course">
             <a href="#" class="course-img">
-             <img src="./img/course05.jpg" alt="">
+             <img src="./img/course07.jpg" alt="">
              <i class="course-link-icon fa fa-link"></i>
            </a>
-           <a class="course-title" href="#">PHP Tips, Tricks, and Techniques</a>
+           <a class="course-title" href="#">How to Get Started in Photography</a>
            <div class="course-details">
-            <span class="course-category">Web Development</span>
+            <span class="course-category">Photography</span>
             <span class="course-price course-free">Free</span>
           </div>
         </div>
@@ -296,204 +328,172 @@
       <div class="col-md-3 col-sm-6 col-xs-6">
         <div class="course">
           <a href="#" class="course-img">
-           <img src="./img/course06.jpg" alt="">
+           <img src="./img/course08.jpg" alt="">
            <i class="course-link-icon fa fa-link"></i>
          </a>
-         <a class="course-title" href="#">All You Need To Know About Web Design</a>
+         <a class="course-title" href="#">Typography From A to Z</a>
          <div class="course-details">
-          <span class="course-category">Web Design</span>
+          <span class="course-category">Typography</span>
           <span class="course-price course-free">Free</span>
         </div>
       </div>
     </div>
     <!-- /single course -->
 
-    <!-- single course -->
-    <div class="col-md-3 col-sm-6 col-xs-6">
-      <div class="course">
-        <a href="#" class="course-img">
-         <img src="./img/course07.jpg" alt="">
-         <i class="course-link-icon fa fa-link"></i>
-       </a>
-       <a class="course-title" href="#">How to Get Started in Photography</a>
-       <div class="course-details">
-        <span class="course-category">Photography</span>
-        <span class="course-price course-free">Free</span>
-      </div>
-    </div>
-  </div>
-  <!-- /single course -->
-
-  <!-- single course -->
-  <div class="col-md-3 col-sm-6 col-xs-6">
-    <div class="course">
-      <a href="#" class="course-img">
-       <img src="./img/course08.jpg" alt="">
-       <i class="course-link-icon fa fa-link"></i>
-     </a>
-     <a class="course-title" href="#">Typography From A to Z</a>
-     <div class="course-details">
-      <span class="course-category">Typography</span>
-      <span class="course-price course-free">Free</span>
-    </div>
-  </div>
-</div>
-<!-- /single course -->
-
-</div>
-<!-- /row -->
-
-</div>
-<!-- /courses -->
-
-<div class="row">
-  <div class="center-btn">
-    <a class="main-button icon-button" href="#">Más Cursos</a>
-  </div>
-</div>
-
-</div>
-<!-- container -->
-
-</div>
-<!-- /Courses -->
-
-<!-- Call To Action -->
-<div id="cta" class="section">
-
-  <!-- Backgound Image -->
-  <div class="bg-image bg-parallax overlay" style="background-image:url(./img/cta1-background.jpg)"></div>
-  <!-- /Backgound Image -->
-
-  <!-- container -->
-  <div class="container">
-
-    <!-- row -->
-    <div class="row">
-
-      <div class="col-md-6">
-        <h2 class="text">Comiensa a superarte profesionalmente desde la comodidad de tu hogar.</h2>
-        <p class="text">Crea tu propia ambiente y ritmo.*</p>
-        <a class="main-button icon-button" href="#">Comienza Ya!</a>
-      </div>
-
     </div>
     <!-- /row -->
 
-  </div>
-  <!-- /container -->
+    </div>
+    <!-- /courses -->
 
-</div>
-<!-- /Call To Action -->
-
-<!-- Why us -->
-<div id="why-us" class="section">
-
-  <!-- container -->
-  <div class="container">
-
-    <!-- row -->
     <div class="row">
-      <div class="section-header text-center">
-        <h2>Por que Coursera?</h2>
-        <p class="lead">Te exponemos acontinuación entre muchas razones:</p>
+      <div class="center-btn">
+        <a class="main-button icon-button" href="#">Más Cursos</a>
       </div>
-
-      <!-- feature -->
-      <div class="col-md-4">
-        <div class="feature">
-          <i class="feature-icon fa fa-flask"></i>
-          <div class="feature-content">
-            <h4>Cursos en linea</h4>
-            <p>Donde sea, a la hora que sea.</p>
-          </div>
-        </div>
-      </div>
-      <!-- /feature -->
-
-      <!-- feature -->
-      <div class="col-md-4">
-        <div class="feature">
-          <i class="feature-icon fa fa-users"></i>
-          <div class="feature-content">
-            <h4>Instructores Expertos</h4>
-            <p>Profesionales con experiencia en el área que elijas.</p>
-          </div>
-        </div>
-      </div>
-      <!-- /feature -->
-
-      <!-- feature -->
-      <div class="col-md-4">
-        <div class="feature">
-          <i class="feature-icon fa fa-comments"></i>
-          <div class="feature-content">
-            <h4>Comunidad</h4>
-            <p>Cientos de personas que se interesan en un curso ayudando a que crezca Coursera.</p>
-          </div>
-        </div>
-      </div>
-      <!-- /feature -->
+    </div>
 
     </div>
-    <!-- /row -->
+    <!-- container -->
 
-    <hr class="section-hr">
+    </div>
+    <!-- /Courses -->
 
-    <!-- row -->
-    <div class="row">
+    <!-- Call To Action -->
+    <div id="cta" class="section">
 
-      <div class="col-md-6">
-        <h3>Persius imperdiet incorrupte et qui, munere nusquam et nec.</h3>
-        <p class="lead">Libris vivendo eloquentiam ex ius, nec id splendide abhorreant.</p>
-        <p>No vel facete sententiae, quodsi dolores no quo, pri ex tamquam interesset necessitatibus. Te denique cotidieque delicatissimi sed. Eu doming epicurei duo. Sit ea perfecto deseruisse theophrastus. At sed malis hendrerit, elitr deseruisse in
-        sit, sit ei facilisi mediocrem.</p>
+      <!-- Backgound Image -->
+      <div class="bg-image bg-parallax overlay" style="background-image:url(./img/cta1-background.jpg)"></div>
+      <!-- /Backgound Image -->
+
+      <!-- container -->
+      <div class="container">
+
+        <!-- row -->
+        <div class="row">
+
+          <div class="col-md-6">
+            <h2 class="text">Comiensa a superarte profesionalmente desde la comodidad de tu hogar.</h2>
+            <p class="text">Crea tu propia ambiente y ritmo.*</p>
+            <a class="main-button icon-button" href="#">Comienza Ya!</a>
+          </div>
+
+        </div>
+        <!-- /row -->
+
       </div>
+      <!-- /container -->
 
-      <div class="col-md-5 col-md-offset-1">
-        <a class="about-video" href="#">
-         <img src="./img/about-video.jpg" alt="">
-         <i class="play-icon fa fa-play"></i>
-       </a>
+    </div>
+    <!-- /Call To Action -->
+
+    <!-- Why us -->
+    <div id="why-us" class="section">
+
+      <!-- container -->
+      <div class="container">
+
+        <!-- row -->
+        <div class="row">
+          <div class="section-header text-center">
+            <h2>Por que Coursera?</h2>
+            <p class="lead">Te exponemos acontinuación entre muchas razones:</p>
+          </div>
+
+          <!-- feature -->
+          <div class="col-md-4">
+            <div class="feature">
+              <i class="feature-icon fa fa-flask"></i>
+              <div class="feature-content">
+                <h4>Cursos en linea</h4>
+                <p>Donde sea, a la hora que sea.</p>
+              </div>
+            </div>
+          </div>
+          <!-- /feature -->
+
+          <!-- feature -->
+          <div class="col-md-4">
+            <div class="feature">
+              <i class="feature-icon fa fa-users"></i>
+              <div class="feature-content">
+                <h4>Instructores Expertos</h4>
+                <p>Profesionales con experiencia en el área que elijas.</p>
+              </div>
+            </div>
+          </div>
+          <!-- /feature -->
+
+          <!-- feature -->
+          <div class="col-md-4">
+            <div class="feature">
+              <i class="feature-icon fa fa-comments"></i>
+              <div class="feature-content">
+                <h4>Comunidad</h4>
+                <p>Cientos de personas que se interesan en un curso ayudando a que crezca Coursera.</p>
+              </div>
+            </div>
+          </div>
+          <!-- /feature -->
+
+        </div>
+        <!-- /row -->
+
+        <hr class="section-hr">
+
+        <!-- row -->
+        <div class="row">
+
+          <div class="col-md-6">
+            <h3>Persius imperdiet incorrupte et qui, munere nusquam et nec.</h3>
+            <p class="lead">Libris vivendo eloquentiam ex ius, nec id splendide abhorreant.</p>
+            <p>No vel facete sententiae, quodsi dolores no quo, pri ex tamquam interesset necessitatibus. Te denique cotidieque delicatissimi sed. Eu doming epicurei duo. Sit ea perfecto deseruisse theophrastus. At sed malis hendrerit, elitr deseruisse in
+            sit, sit ei facilisi mediocrem.</p>
+          </div>
+
+          <div class="col-md-5 col-md-offset-1">
+            <a class="about-video" href="#">
+             <img src="./img/about-video.jpg" alt="">
+             <i class="play-icon fa fa-play"></i>
+           </a>
+         </div>
+
+       </div>
+       <!-- /row -->
+
      </div>
-
-   </div>
-   <!-- /row -->
-
- </div>
- <!-- /container -->
-
-</div>
-<!-- /Why us -->
-
-<!-- Contact CTA -->
-<div id="contact-cta" class="section">
-
-  <!-- Backgound Image -->
-  <div class="bg-image bg-parallax overlay" style="background-image:url(./img/cta2-background.jpg)"></div>
-  <!-- Backgound Image -->
-
-  <!-- container -->
-  <div class="container">
-
-    <!-- row -->
-    <div class="row">
-
-      <div class="col-md-8 col-md-offset-2 text-center">
-        <h2 class="text">Contactanos</h2>
-        <p class="text">Tu futuro comienza aquí.</p>
-        <a class="main-button icon-button" href="#">Contactano</a>
-      </div>
+     <!-- /container -->
 
     </div>
-    <!-- /row -->
+    <!-- /Why us -->
 
-  </div>
-  <!-- /container -->
+    <!-- Contact CTA -->
+    <div id="contact-cta" class="section">
 
+      <!-- Backgound Image -->
+      <div class="bg-image bg-parallax overlay" style="background-image:url(./img/cta2-background.jpg)"></div>
+      <!-- Backgound Image -->
+
+      <!-- container -->
+      <div class="container">
+
+        <!-- row -->
+        <div class="row">
+
+          <div class="col-md-8 col-md-offset-2 text-center">
+            <h2 class="text">Contactanos</h2>
+            <p class="text">Tu futuro comienza aquí.</p>
+            <a class="main-button icon-button" href="#">Contactano</a>
+          </div>
+
+        </div>
+        <!-- /row -->
+
+      </div>
+      <!-- /container -->
+
+    </div>
+    <!-- /Contact CTA -->
 </div>
-<!-- /Contact CTA -->
-
 <!-- Footer -->
 <footer id="footer" class="section">
 

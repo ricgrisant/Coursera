@@ -22,7 +22,6 @@ inner join curso cu on cu.IDCURSO=se.IDCURSO
 inner join USUARIOXCURSO uc on uc.IDCURSO=cu.IDCURSO
 inner join VIDEO vid on vid.IDLECCION=lec.IDLECCION
 where uc.IDUSUARIO=".$idUsuario." and se.idcurso=".$_GET["idCurso"];
-
     $conexion->consultaSql($sql);
     $result = $conexion->consultaSql($sql);
     if( $result === false ) {

@@ -1,8 +1,8 @@
 <?php 
 class Conexion{
 
-	private $Usuario = "system";
-	private $contrasena = "Asd.#1234";
+	private $Usuario = "COURSERA";
+	private $contrasena = "oracle";
 	private $link;
 	private $infoConexion = 'localhost/XE';
 

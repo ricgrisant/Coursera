@@ -1,1 +1,7 @@
-// Empty JS for your own code to be here
+$(document).ready(function() {
+
+	$("#btnCursos").click(function(event) {
+		event.preventDefault();
+	    $("#contenido").load('miscursos.php');
+	    });
+});

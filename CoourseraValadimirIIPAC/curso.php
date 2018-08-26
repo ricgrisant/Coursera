@@ -14,17 +14,14 @@ if (!$usuario) {
     $conexion = new Conexion();
 
     $sql =
-    "with info_curso as (
-    select idcurso,nombre,dificultad,duracion,descripcion
-    from curso),
-    curso_usr as(
-    SELECT idusuario,idcurso
-    FROM usuarioxcurso
-    where idusuario=".$idUsuario.")
-    SELECT se.numerosemana,se.acercade,inf.idcurso,inf.nombre,inf.dificultad,inf.duracion,inf.descripcion  
-    FROM info_curso inf
-    inner join curso_usr u on inf.idcurso=u.idcurso
-    inner join semana se on se.idcurso=inf.idcurso";
+    "SELECT se.numerosemana,se.acercade,cu.idcurso,cu.nombre,cu.dificultad,cu.duracion,cu.descripcion
+FROM
+    lecciones lec
+inner join semana se on se.IDSEMANA=lec.IDSEMANA
+inner join curso cu on cu.IDCURSO=se.IDCURSO
+inner join USUARIOXCURSO uc on uc.IDCURSO=cu.IDCURSO
+inner join VIDEO vid on vid.IDLECCION=lec.IDLECCION
+where uc.IDUSUARIO=".$idUsuario." and se.idcurso=".$_GET["idCurso"];
 
     $conexion->consultaSql($sql);
     $result = $conexion->consultaSql($sql);
@@ -35,7 +32,6 @@ if (!$usuario) {
   oci_execute($result);
   $row =  $conexion->obtenerFila($result);
   
-  var_dump(oci_num_rows ($result));
   ?>
 
 

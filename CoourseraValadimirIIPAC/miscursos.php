@@ -28,6 +28,13 @@
  src="https://code.jquery.com/jquery-3.3.1.min.js"
  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
  crossorigin="anonymous"></script>
+ <link href="https://fonts.googleapis.com/css?family=Lato:700%7CMontserrat:400,600" rel="stylesheet">
+
+        <!-- Font Awesome Icon -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+
+        <!-- Custom stlylesheet -->
+          <script type="text/javascript" src="js/scripts.js"></script>
  <title>Linkedin</title>
 </head>
 <body>
@@ -114,7 +121,7 @@
         </div>
         <div style="bottom: 85px;left: 380px;" class="col-sm-4">
           <!--boton de ir al curso y obteer certificado-->
-          <button href="'.$row["DURACION"].'" type="button" class="btn btn-light">Ir al curso</button>
+          <a href="curso.php?idCurso='.$row["IDCURSO"].'"'.' id="irCurso" type="button" class="btn btn-light">Ir al curso</a>
         </div>
       </div>
     </div>
